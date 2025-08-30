@@ -23,7 +23,7 @@ oralvis/
 ├─ scripts/
 │  ├─ postprocess_fdi_v4.py     # conservative post-processor (used)
 │  ├─ eval_id_accuracy.py       # ID-accuracy on matched boxes (IoU≥0.5)
-│  └─ compare_before_after.py   # collages: raw vs post-processed
+│ 
 └─ README.md
 ```
 
