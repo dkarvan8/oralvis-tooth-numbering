@@ -7,25 +7,29 @@ Automatic detection and **FDI tooth numbering (11–48)** in oral images using U
 ## 📁 Project Structure (recommended)
 
 ```
-oralvis/
+ORALVIS/
+├─ .gitignore
+├─ README.md
 ├─ data.yaml
-├─ oralvis_dataset/
-│  ├─ images/
-│  │  ├─ train/  ├─ val/  ├─ test/
-│  └─ labels/
-│     ├─ train/  ├─ val/  ├─ test/
-├─ runs_oralvis/
-│  └─ detect/
-│     ├─ yv8s_fdi640/           # training run (results.png, weights/best.pt)
-│     ├─ yv8s_val/              # validation eval (confusion_matrix.png, predictions.json)
-│     ├─ yv8s_test/             # test eval (confusion_matrix.png, predictions.json)
-│     └─ yv8s_preds/            # predictions on test (images + labels/*.txt)
+├─ requirements.txt
 ├─ scripts/
-│  ├─ postprocess_fdi_v4.py     # conservative post-processor (used)
-│  ├─ eval_id_accuracy.py       # ID-accuracy on matched boxes (IoU≥0.5)
-│ 
-└─ README.md
-```
+│  ├─ postprocess_fdi_v4.py
+│  ├─ eval_id_accuracy.py
+│      
+├─ results/
+│  ├─ training/
+│  │  └─ results.png
+│  ├─ eval/
+│  │  ├─ val_confusion_matrix.png
+│  │  ├─ test_confusion_matrix.png
+│  │  ├─ val_metrics.txt
+│  │  └─ test_metrics.txt
+│  ├─ predictions_raw/               (3–10 images)
+│  ├─ predictions_post/              (same 3–10 images)                 
+│  └─ weights/
+│     └─ best.pt                     (trained weights)
+└─ venv/                             (ignored)
+
 
 > **Note:** Paths above reflect what’s created by the commands below. Your actual run names may vary (e.g., `yv8s_fdi640`).
 
