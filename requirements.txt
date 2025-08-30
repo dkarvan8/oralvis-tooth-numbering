@@ -1,0 +1,17 @@
+# OralVis project requirements
+# Core dependencies
+ultralytics>=8.3.0
+opencv-python>=4.8.1.78
+PyYAML>=6.0.1
+numpy>=1.24.0
+
+# Optional (for helper plots/utilities)
+matplotlib>=3.8.0
+
+# NOTE: Install PyTorch separately for GPU (choose the right CUDA build):
+#   CUDA 12.1:
+#       pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+#   CUDA 11.8:
+#       pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+# If CPU-only is fine:
+#       pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu

@@ -1,0 +1,21 @@
+# Envs & caches
+venv/
+.env
+__pycache__/
+*.pyc
+
+# Big local data & runs
+oralvis_dataset/
+runs/
+runs_oralvis/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# VSCode/IDE
+.vscode/
+.idea/
+
+# Jupyter junk
+.ipynb_checkpoints/
